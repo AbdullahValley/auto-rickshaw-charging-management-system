@@ -1,0 +1,97 @@
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+body
+{
+	margin:0;
+	padding: 0;
+	background:#efefef;
+	fotn-family:'SolaimanLipi', Arial, sans-serif !important;
+
+}
+
+#box
+{
+	margin: 5% auto;
+	background:#fff;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.6)
+
+}
+
+.left-box
+{
+	padding:5px 40px 40px 40px;
+	padding-top: 20px;
+}
+
+.left-box p
+{
+
+	color: #fff;
+	margin:0;
+	padding-top:15px; 
+	font-size: 15px;
+
+
+}
+.left-box input[type="submit"]
+{
+	margin-top: 20px;
+	border-radius: 2px;
+}
+.right-box .spantag
+{
+	margin-bottom: 40px;
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 2px 4px rgb(0,0,0,0.6);
+
+}
+
+.right-box
+{
+	padding-top:40px; 
+	background:url(images/background/picn2.jpg);
+	background-size:cover;
+
+
+}
+.right-box button
+{
+	margin-bottom:25px;
+	border: none;
+	border-radius: 2px;
+	font-family: sans-serif;
+	font-weight: 500;
+	transition: 0.2s ease;
+	cursor: pointer;
+
+}
+
+#mdl-1,#mdl-2,#mdl-3
+{ 
+	color: rgb(0,0,0.6);
+	font-family: sans-serif;
+	padding: 5px;
+	text-align: left; 
+}
+
+#mdl-1 input[type="submit"],#mdl-2 input[type="submit"],#mdl-3 input[type="submit"]
+{
+	margin-top: 5px;
+	padding:5px;
+	width: 150px;
+	background:forestgreen;
+	border-radius: 2px;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+}
+#mdl-1 p,#mdl-2 p,#mdl-3 p
+{
+	margin-top:15px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-weight: bold;
+	 
+}

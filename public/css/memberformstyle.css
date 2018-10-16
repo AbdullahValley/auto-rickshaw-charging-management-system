@@ -1,0 +1,39 @@
+body
+{
+
+	background: url(../images/background/picn1.jpg);
+	background-size: cover;
+
+
+}
+#form
+{
+	background: rgb(0,0,0,0.8);
+	min-height: 700px;
+	padding:5px 40px 40px 40px;
+	
+
+}
+
+h2
+{
+
+	margin: 0;
+	padding:20px ;
+	color: #efed40;
+	text-decoration: underline;
+	text-align: center;
+
+}
+
+p
+{
+	color:#fff ;
+	margin:0;
+	padding-top:10px;
+
+	
+}
+
+
+
