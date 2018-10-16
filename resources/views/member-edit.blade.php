@@ -18,6 +18,7 @@
 
                 <form action="{{ action('HomeController@member_update', $member->id)  }}" method="post" enctype="multipart/form-data" class="form-group">
                     @csrf
+                    @method('PUT')
                     <div class="row">
 
                         <div class="col-lg-12">

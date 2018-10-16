@@ -35,16 +35,16 @@ class HomeController extends Controller
     {
         $member = new Member();
 
-        $member->licence = $request->licence;
+        $member->licence        = $request->licence;
         $member->driver_name    = $request->driver_name;
-        $member->owner_name = $request->owner_name;
-        $member->driver_mobile    = $request->driver_mobile;
-        $member->owner_mobile    = $request->owner_mobile;
-        $member->driver_address  = $request->driver_address;
+        $member->owner_name     = $request->owner_name;
+        $member->driver_mobile  = $request->driver_mobile;
+        $member->owner_mobile   = $request->owner_mobile;
+        $member->driver_address = $request->driver_address;
         $member->owner_address  = $request->owner_address;
-        $member->auto_type  = $request->auto_type;
-        $member->charge_rate  = $request->charge_rate;
-        $member->due_money  = $request->due_money;
+        $member->auto_type      = $request->auto_type;
+        $member->charge_rate    = $request->charge_rate;
+        $member->due_money      = $request->due_money;
 
         if ($request->hasFile('photo')) {
             $file = $request->photo;
@@ -76,18 +76,18 @@ class HomeController extends Controller
     public function member_update(Request $request, $id)
     {
 
-        $member           = Member::find($id);
+        $member                 = Member::find($id);
 
-        $member->licence = $request->licence;
+        $member->licence        = $request->licence;
         $member->driver_name    = $request->driver_name;
-        $member->owner_name = $request->owner_name;
-        $member->driver_mobile    = $request->driver_mobile;
-        $member->owner_mobile    = $request->owner_mobile;
-        $member->driver_address  = $request->driver_address;
+        $member->owner_name     = $request->owner_name;
+        $member->driver_mobile  = $request->driver_mobile;
+        $member->owner_mobile   = $request->owner_mobile;
+        $member->driver_address = $request->driver_address;
         $member->owner_address  = $request->owner_address;
-        $member->auto_type  = $request->auto_type;
-        $member->charge_rate  = $request->charge_rate;
-        $member->due_money  = $request->due_money;
+        $member->auto_type      = $request->auto_type;
+        $member->charge_rate    = $request->charge_rate;
+        $member->due_money      = $request->due_money;
 
         if ($request->hasFile('photo'))
         {
