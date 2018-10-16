@@ -27,3 +27,8 @@ Route::delete('/member-destroy/{id}', 'HomeController@member_destroy')->name('me
 Route::get('/member-edit/{id}', 'HomeController@member_edit')->name('member-edit');
 
 Route::put('/member-update/{id}', 'HomeController@member_update')->name('member-update');
+
+Route::post('/transactions', 'HomeController@store_daily_sheet')->name('transactions');
+
+Route::get('/transaction-list', 'HomeController@transaction_list')->name('transaction-list');
+

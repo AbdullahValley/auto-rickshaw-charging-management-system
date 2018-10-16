@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Member;
 use Image;
+use App\Transaction;
 
 class HomeController extends Controller
 {
@@ -22,8 +23,30 @@ class HomeController extends Controller
 
     public function daily_sheet()
     {
-        return view('daily-sheet');
+        $members = Member::orderBy('id', 'desc')->get();
+        return view ('daily-sheet', compact('members'));
     }
+
+    public function transaction_list()
+    {
+        $transactions = Transaction::orderBy('id', 'desc')->get();
+        return view ('transaction-list', compact('transactions'));
+    }
+
+    public function store_daily_sheet(Request $request)
+    {
+        $transaction = new Transaction();
+
+        $transaction->member_id        = $request->member_id;
+        $transaction->charge_type      = $request->charge_type;
+        $transaction->in_cash          = $request->in_cash;
+        $transaction->loan_pay         = $request->loan_pay;
+
+        $transaction->save();
+
+        return redirect('/transaction-list')->with('successMsg', 'This Transaction Inserted Successfully!');
+    }
+
 
     public function member_list()
     {

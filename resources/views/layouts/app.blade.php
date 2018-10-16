@@ -71,7 +71,11 @@
                                         <b>{{ 'Add New Member' }}</b>
                                     </a>
                                     <a class="dropdown-item" href="{{ url('/daily-sheet') }}">
-                                        <b>{{ 'Daily Sheet' }}</b>
+                                        <b>{{ 'Add Daily Sheet' }}</b>
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ url('/transaction-list') }}">
+                                        <b>{{ 'Transactions' }}</b>
                                     </a>
 
                                     <a class="dropdown-item" href="{{ url('/member-list') }}">
